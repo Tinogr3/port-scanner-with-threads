@@ -19,20 +19,33 @@ usage: scanner.py [-h] -t TARGET [-o OUTPUT] [--threads THREADS] [-all] [-u] [--
 
 Escáner Multihilo TCP/UDP Mejorado
 
-options:
-  -h, --help           show this help message and exit
-  -t, --target TARGET  IP Objetivo
-  -o, --output OUTPUT  Salida JSON
-  --threads THREADS    Hilos
-  -all, --all-ports    Escanear 1-65535
-  -u, --udp            Activar escaneo UDP (Por defecto es TCP)
-  --delay DELAY        Segundos de espera entre peticiones (Evasión)
+Options:
+
+    -h, --help           show this help message and exit
+    
+    -t, --target TARGET  IP Objetivo
+    
+    -o, --output OUTPUT  Salida JSON
+    
+    --threads THREADS    Hilos
+    
+    -all, --all-ports    Escanear 1-65535
+
+    -u, --udp            Activar escaneo UDP (Por defecto es TCP)
+
+    --delay DELAY        Segundos de espera entre peticiones (Evasión)
+
 
 Por defecto:
+
     OUTPUT: reporte_scan.json
+    
     THREADS: 250
+    
     (Sin -u): Solo escanea puertos TCP
+    
     (Sin -all): 1000 puertos más comunmente usados
+    
     DELAY: 0.0
 
 ## ⚠️ Nota Legal
